@@ -1,4 +1,3 @@
-
 function timeout(){alert("Times Up");}
 setTimeout(timeout,'10000');
 
@@ -25,13 +24,30 @@ function cycleOpacity ()
 			clearInterval(time);	
 		}		
 	}
+function cycleOpacity ()
+	{
+		if (fdrOpacity >=1)
+		{
+			fdrOpacity += .10;
+			setOpacity();
+		}
+		else
+		{
+			clearInterval(time);	
+		}		
+	}
 	
 function StartCO()
 	{
 	time = setInterval(cycleOpacity, "100");
 	}
+function StartCO2()
+	{
+	time = setInterval(cycleOpacity2, "100");
+	}
 
 	
-var btnAccept = document.getElementById("btnAccept");
-
-btnAccept.addEventListener('click', StartCO);
+var btnHide = document.getElementById("btnHide");
+var btnShow = document.getElementById("btnShow");
+btnHide.addEventListener('click', StartCO);
+btnShow.addEventListener('click', StartCO2);
