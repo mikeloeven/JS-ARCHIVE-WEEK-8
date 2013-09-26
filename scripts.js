@@ -24,7 +24,7 @@ function cycleOpacity ()
 			clearInterval(time);	
 		}		
 	}
-function cycleOpacity ()
+function cycleOpacity2 ()
 	{
 		if (fdrOpacity >=1)
 		{
