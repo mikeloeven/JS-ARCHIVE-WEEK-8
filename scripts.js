@@ -26,7 +26,7 @@ function cycleOpacity ()
 	}
 function cycleOpacity2 ()
 	{
-		if (fdrOpacity >=1)
+		if (fdrOpacity <=1)
 		{
 			fdrOpacity += .10;
 			setOpacity();
