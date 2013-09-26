@@ -14,10 +14,11 @@ function setOpacity  ()
 	
 function cycleOpacity ()
 	{
-		if (fdrOpacity <=1)
+		if (fdrOpacity >0.2 )
 		{
-			fdrOpacity -= .10;
+			fdrOpacity -= 0.10;
 			setOpacity();
+			console.log(fdrOpacity);
 		}
 		else
 		{
@@ -26,10 +27,11 @@ function cycleOpacity ()
 	}
 function cycleOpacity2 ()
 	{
-		if (fdrOpacity <=1)
+		if (fdrOpacity <1.0)
 		{
-			fdrOpacity += .10;
+			fdrOpacity += 0.10;
 			setOpacity();
+			console.log(fdrOpacity);
 		}
 		else
 		{
